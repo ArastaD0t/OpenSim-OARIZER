@@ -21,7 +21,7 @@ If u wanna help me, feel free to use my notes bellow...
 Notes for devs....
 
 ##################################################
-			Reverse engineering of .oar
+	Reverse engineering of .oar
 ##################################################
 open as .zip
 ###Tools###
