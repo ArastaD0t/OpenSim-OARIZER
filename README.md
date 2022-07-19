@@ -5,7 +5,7 @@
 
 I try make maps for Open Simulator externally  
 My plan is make possible open O.s. World inside  
-external editor (`c4d`,`blender`) for faster and  
+external editor (`blender`,`c4d`,`...`) for faster and  
 better world creating and editing....  
 
 If u wanna help me, feel free to use my notes bellow...  
