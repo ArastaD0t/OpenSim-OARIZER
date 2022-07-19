@@ -7,7 +7,7 @@ I try make maps for Open Simulator externally
 My plan is make possible open O.s. World inside  
 external editor (`blender`,`c4d`,`...`) for faster and  
 better world creating and editing....  
-Just run ``
+Just run `Synthetizer.bat`
 
 
 
