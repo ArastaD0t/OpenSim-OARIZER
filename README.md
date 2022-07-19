@@ -22,6 +22,8 @@ Notes for devs....
 
 ### UID4 generator
  - https://www.uuidgenerator.net/version4  
+### Texture Assets view
+ - https://www.irfanview.com
 
 ### Create official OAR   
  - DreamGrid (for world generate)
