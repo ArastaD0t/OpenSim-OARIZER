@@ -75,9 +75,10 @@ set area=65536
 set mediaURL=http://stream.intenseradio.net:8000/high
 set OwnerID=afacdd75-c9d4-4925-9f2d-e6c18a2da175
 set SnapshotID=07a3fa1e-697f-4458-abcf-00ac70199546
-
-
-
+set damage=False
+set BlockFly=False
+set BlockTerraform=False
+set maxusers=99
 goto FilesTree
 
 :FilesTree
@@ -143,13 +144,31 @@ echo   ^<UserLookAt^>^&lt;0.614626, -0.788819, 0^&gt;^</UserLookAt^> >> %globali
 echo   ^<Dwell^>0^</Dwell^> >> %globalid%.xml
 echo   ^<OtherCleanTime^>0^</OtherCleanTime^> >> %globalid%.xml
 echo ^</LandData^> >> %globalid%.xml
-
-
-
-
-
 cd ..
+goto settingsXml
 
+:settingsXml
+cd settings
+echo ^<?xml version="1.0" encoding="utf-16"?^> > %landname%.xml
+echo ^<RegionSettings^> >> %landname%.xml
+echo ^<General^> >> %landname%.xml
+echo ^<AllowDamage^>ˇ%damage%^</AllowDamage^> >> %landname%.xml
+echo ^<AllowLandResell^>True^</AllowLandResell^> >> %landname%.xml
+echo ^<AllowLandJoinDivide^>True^</AllowLandJoinDivide^> >> %landname%.xml
+echo ^<BlockFly^>%BlockFly%^</BlockFly^> >> %landname%.xml
+echo ^<BlockLandShowInSearch^>False^</BlockLandShowInSearch^> >> %landname%.xml
+echo ^<BlockTerraform^>%BlockTerraform%^</BlockTerraform^> >> %landname%.xml
+echo ^<DisableCollisions^>False^</DisableCollisions^> >> %landname%.xml
+echo ^<DisablePhysics^>False^</DisablePhysics^> >> %landname%.xml
+echo ^<DisableScripts^>False^</DisableScripts^> >> %landname%.xml
+echo ^<MaturityRating^>2^</MaturityRating^> >> %landname%.xml
+echo ^<RestrictPushing^>False^</RestrictPushing^> >> %landname%.xml
+echo ^<AgentLimit^>%maxusers%^</AgentLimit^> >> %landname%.xml
+echo ^<ObjectBonus>1</ObjectBonus> >> %landname%.xml
+echo ^</General^> >> %landname%.xml
+echo ^<GroundTextures^> >> %landname%.xml
+echo ^ >> %landname%.xml
+echo ^ >> %landname%.xml
 pause
 
 
