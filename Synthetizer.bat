@@ -62,7 +62,7 @@ goto IDS
 
 :IDS
 POWERSHELL -c "[guid]::NewGuid().ToString().ToUpper()" > %ProjectName%_uuid4.inf
-start %home%\timestamp.bat :h
+start %home%\timestamp.bat
 set /p timestamp=<%tmp%\timestamp.tmp
 set %timestamp% = %timestamp%
 echo %timestamp% > %ProjectName%_timestamp.inf
