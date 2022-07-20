@@ -163,7 +163,7 @@ cd settings
 echo ^<?xml version="1.0" encoding="utf-16"?^> > %landname%.xml
 echo ^<RegionSettings^> >> %landname%.xml
 echo   ^<General^> >> %landname%.xml
-echo     ^<AllowDamage^>ˇ%damage%^</AllowDamage^> >> %landname%.xml
+echo     ^<AllowDamage^>%damage%^</AllowDamage^> >> %landname%.xml
 echo     ^<AllowLandResell^>True^</AllowLandResell^> >> %landname%.xml
 echo     ^<AllowLandJoinDivide^>True^</AllowLandJoinDivide^> >> %landname%.xml
 echo     ^<BlockFly^>%BlockFly%^</BlockFly^> >> %landname%.xml
@@ -190,8 +190,8 @@ echo     ^<ElevationHighSW^>50^</ElevationHighSW^> >> %landname%.xml
 echo     ^<ElevationHighNW^>50^</ElevationHighNW^> >> %landname%.xml
 echo     ^<ElevationHighSE^>50^</ElevationHighSE^> >> %landname%.xml
 echo     ^<ElevationHighNE^>50^</ElevationHighNE^> >> %landname%.xml
-echo     ^</GroundTextures^> >> %landname%.xml
-echo     ^<Terrain^> >> %landname%.xml
+echo   ^</GroundTextures^> >> %landname%.xml
+echo   ^<Terrain^> >> %landname%.xml
 echo     ^<WaterHeight^>%WaterHeight%^</WaterHeight^> >> %landname%.xml
 echo     ^<TerrainRaiseLimit^>%TerrainRaiseLimit%^</TerrainRaiseLimit^> >> %landname%.xml
 echo     ^<TerrainLowerLimit^>%TerrainLowerLimit%^</TerrainLowerLimit^> >> %landname%.xml
@@ -247,20 +247,11 @@ echo ^<SceneObjectGroup^>^<SceneObjectPart xmlns:xsi="http://www.w3.org/2001/XML
 
 
  
+:: :DEBUG
 
-
-
-
-
-
-
-
-
-:DEBUG
-
-ECHO _________________________________________________________________
-ECHO home=%home% PWD=%cd%
-ECHO _________________________________________________________________
+:: ECHO _________________________________________________________________
+:: ECHO home=%home% PWD=%cd%
+:: ECHO _________________________________________________________________
 
 
 pause
