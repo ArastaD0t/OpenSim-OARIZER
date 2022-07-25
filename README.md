@@ -19,10 +19,12 @@ terrain to .obj
 
 
 
-If u wanna help me, feel free to use my notes bellow...  
+
   
   
 ### Notes for devs....
+If u wanna help me, feel free to use my notes bellow...  
+
 
 ---
 #          Reverse engineering of .oar  
