@@ -16,6 +16,9 @@ Just run `Synthetizer.bat`
 - terrain to .obj
 - .obj uuids
 - .obj to world
+- export to 3D software
+- export to OpenSimulator
+- GUI
 
 
 
