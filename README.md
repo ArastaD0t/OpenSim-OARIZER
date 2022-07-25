@@ -9,7 +9,13 @@ external editor (`blender`,`c4d`,`...`) for faster and
 better world creating and editing....  
 Just run `Synthetizer.bat`
 
-
+###TO DO
+~~syntethic files~~
+~~config files~~
+~~size select~~
+terrain to .obj
+.obj uuids
+.obj to world
 
 
 
